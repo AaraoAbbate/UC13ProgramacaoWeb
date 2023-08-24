@@ -1,13 +1,33 @@
 <?php
 
+$listaAlunos = [
+    [   "ID"=> "1",
+        "nome" => "João",
+        "dataNascimento" => "1990-01-15",
+        "email" => "joao@example.com",
+        "cpf" => "123.456.789-00",
+        "telefone" => "12345678",
+        "celular" => "987654321"
+    ]
+    ];
+    $listaLivros = [
+     [
+        "nome" => "João",
+        "dataNascimento" => "1990-01-15",
+        "email" => "joao@example.com",
+        "cpf" => "123.456.789-00",
+        "telefone" => "12345678",
+        "celular" => "987654321"
+     ]
+     ];
 class Aluno{
     private $IdAluno;
-    public $nome;
-    public $dataNascimento;
-    public $email;
-    public $cpf;
-    public $telefone;
-    public $celular;
+    private $nome;
+    private $dataNascimento;
+    private $email;
+    private $cpf;
+    private $telefone;
+    private $celular;
 
     public function __construct($nome, $dataNascimento, $email, $cpf, $telefone, $celular){
         $this->nome = $nome;
@@ -17,8 +37,31 @@ class Aluno{
         $this->telefone = $telefone;
         $this->celular = $celular;
     }
-}
 
+    public function getNome(){
+        return $this->nome;
+    }
+
+    public function getdataNAscimento(){
+        return $this->dataNascimento;
+    }
+
+    public function getEmail(){
+        return $this->email;
+    }
+
+    public function getCpf(){
+        return $this->cpf;
+    }
+
+    public function getTelefone(){
+        return $this->telefone;
+    }
+
+    public function getCelular(){
+        return $this->celular;
+    }
+}
 
 class Livro{
     public $Idlivro;
@@ -50,14 +93,6 @@ class Emprestimo{
     public function __construct(Livro $livro, Aluno $aluno) {
         $this->aluno = $aluno;
         $this->livro = $livro; 
-
-        $this->aluno->nome = $aluno->nome; 
-        $this->aluno->email = $aluno->email;
-        $this->livro->titulo = $livro->titulo;
-        $this->aluno->telefone = $aluno->telefone;
-        $this->aluno->cpf = $aluno->cpf;
-        
-        
         /*
         $this->titulo = $titulo;
         $this->valor = $valor;
@@ -66,6 +101,14 @@ class Emprestimo{
         $this->anopublicacao = $anoPublic;
         $this->isbn = $isbn;*/
 
+    }
+
+    public function getAluno(){
+        return $this->aluno; 
+    }
+
+    public function getLivro(){
+        return $this->livro;
     }
 }
 

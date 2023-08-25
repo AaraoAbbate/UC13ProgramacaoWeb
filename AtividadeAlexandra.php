@@ -11,23 +11,23 @@ $listaAlunos = [
     ]
     ];
     $listaLivros = [
-     [
-        "nome" => "João",
-        "dataNascimento" => "1990-01-15",
-        "email" => "joao@example.com",
-        "cpf" => "123.456.789-00",
-        "telefone" => "12345678",
-        "celular" => "987654321"
+     [  "ID"=> "1",
+        "nome" => "totoro",
+        "anoPublicacao" => "1990-01-15",
+        "autor" => "jao perez",
+        "preco" => "29.30",
+        "numeroDepaginas" => "100",
+        "isbn" => "987654321"
      ]
      ];
 class Aluno{
-    private $IdAluno;
-    private $nome;
-    private $dataNascimento;
-    private $email;
-    private $cpf;
-    private $telefone;
-    private $celular;
+    public $IdAluno;
+    public $nome;
+    public $dataNascimento;
+    public $email;
+    public $cpf;
+    public $telefone;
+    public $celular;
 
     public function __construct($nome, $dataNascimento, $email, $cpf, $telefone, $celular){
         $this->nome = $nome;

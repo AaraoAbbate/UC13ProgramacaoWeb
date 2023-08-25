@@ -22,7 +22,7 @@
             </tr>
         </thead>
         <body>
-            <?php include 'AtividadeAlexandra.php' ?>  <!-- pega um arquivo de fora-->
+            <?php include 'AtividadeAlexandra.php' //// ?>  <!-- pega um arquivo de fora-->
             <?php foreach ($listaAlunos as $Aluno) : ?>
                 <tr>
                     <td><?= $Aluno["ID"] ?></td>

@@ -71,7 +71,7 @@ class Livro{
     public $numeroPaginas;
     public $anoPublic;
     public $isbn;
-
+/////
     public function __construct($titulo, $valor, $autor, $numeroPaginas, $anoPublic, $isbn) {
         $this->titulo = $titulo;
         $this->valor = $valor;

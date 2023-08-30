@@ -11,21 +11,27 @@
     <form action="processar_cadastro.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br>
+        <br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
+        <br>
 
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone"><br>
+        <br>
 
         <label for="dataNascimento">Data de Nascimento:</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+        <br>
 
         <label for="cpf">CPF:</label>
         <input type="text" id="cpf" name="cpf" required><br>
+        <br>
 
         <label for="celular">Celular:</label>
         <input type="tel" id="celular" name="celular"><br>
+        <br>
 
         <input type="submit" value="Cadastrar Aluno">
     </form>

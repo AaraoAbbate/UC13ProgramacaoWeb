@@ -24,7 +24,7 @@
             <th>valor</th>
             <th>Numero de paginas</th>
             <th>ano publicação</th>
-            <!-- ... outros cabeçalhos de coluna ... -->
+            
         </tr>
         <tr>
             <td><?php echo $titulo; ?></td>

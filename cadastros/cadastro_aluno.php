@@ -1,5 +1,3 @@
-
-
 <html>
 
 <html lang="en">
@@ -8,7 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <title>cadastro de aluno</title>    
+    <title>cadastro de aluno</title>
 
 </head>
 
@@ -16,71 +14,70 @@
 
     <div>
 
-    <h1>Cadastro De Livro</h1>
+        <h1>Cadastro De Livro</h1>
 
-    <?php
+        <?php
 
         if (isset($_GET['success'])) {
 
             echo 'Cadastro foi feito com sucesso!';
-
         }
 
         ?>
 
-    <form action="processar_cadastro.php" method="post">
+        <form action="processar_cadastro.php" method="post">
 
-    <label for="titulo">Título:</label>
+            <label for="titulo">Título:</label>
 
-        <br>
+            <br>
 
-        <input type="text" name="titulo" id="titulo" required>
+            <input type="text" name="titulo" id="titulo" required>
 
-        <br><br>
+            <br><br>
 
-        <label for="valor">Valor:</label>
+            <label for="valor">Valor:</label>
 
-        <br>
+            <br>
 
-        <input type="number" name="valor" id="valor" step="0.01" required>
+            <input type="number" name="valor" id="valor" step="0.01" required>
 
-        <br><br>
+            <br><br>
 
-        <label for="autor">Autor:</label>
+            <label for="autor">Autor:</label>
 
-        <br>
+            <br>
 
-        <input type="text" name="autor" id="autor" required>
+            <input type="text" name="autor" id="autor" required>
 
-        <br><br>
+            <br><br>
 
-        <label for="numPaginas">Número de Páginas:</label>
+            <label for="numPaginas">Número de Páginas:</label>
 
-        <br>
+            <br>
 
-        <input type="number" name="numPaginas" id="numPaginas" required>
+            <input type="number" name="numPaginas" id="numPaginas" required>
 
-        <br><br>
+            <br><br>
 
-        <label for="anoPublicacao">Ano de Publicação:</label>
+            <label for="anoPublicacao">Ano de Publicação:</label>
 
-        <br>
+            <br>
 
-        <input type="number" name="anoPublicacao" id="anoPublicacao" required>
+            <input type="number" name="anoPublicacao" id="anoPublicacao" required>
 
-        <br><br>
+            <br><br>
 
-        <label for="isbn">ISBN:</label>
+            <label for="isbn">ISBN:</label>
 
-        <br>
+            <br>
 
-        <input type="text" name="isbn" id="isbn" required>
+            <input type="text" name="isbn" id="isbn" required>
 
-        <br><br>
+            <br><br>
 
-        <button type="submit">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
 
-    </form>
+        </form>
 
     </div>
 

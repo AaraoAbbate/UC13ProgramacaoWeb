@@ -1,3 +1,8 @@
+<?php
+include"classe_livro.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,10 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
+    
 </head>
 <body>
 
-    <h1>Cadastro de alunos</h1>
+    <h1>Cadastro de livros</h1>
     <form action="processar_cadastro_livros.php" method="post">
         <label for="titulo"> titulo:</label>
         <input type="text" id="titulo" name="titulo" required><br>
@@ -30,7 +36,7 @@
     
     <hr>
     <div id="livros-info" style="display: none;">
-    <h2>Informações do Aluno</h2>
+    <h2>Informações do livro</h2>
     <table>
         <tr>
             <th>titulo</th>
